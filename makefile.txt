@@ -1,0 +1,20 @@
+COMPILE = cc #COMPILE is a variable
+target = stud_add.o stud_del.o stud_mod.o stud_save.o stud_show.o header.h
+
+student:        ${target}
+        ${COMPILE} ${target} -o student
+stud_add.o:     stud_add.c
+        ${COMPILE} -c $^
+stud_del.o:     stud_del.c
+        ${COMPILE} -c $^
+stud_mod.o:     stud_mod.c
+        ${COMPILE} -c $^
+stud_save.o:    stud_save.c
+        ${COMPILE} -c $^
+stud_show.o:    stud_show.c
+        ${COMPILE} -c $^
+header.h:       header.h
+        ${COMPILE} -c $^
+clear:
+        @echo "cleaning up..."
+        @rm -ivr *.o
