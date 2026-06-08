@@ -63,11 +63,11 @@ Student_database
 
 ## How to Run
 
-# Compile
+### Compile
 ```bash
 gcc std_add.c std_del.c std_mod.c std_save.c std_show.c -o std
 ```
-# Run
+### Run
 ```bash
 ./std
 ```
